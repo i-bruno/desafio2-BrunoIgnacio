@@ -68,27 +68,24 @@ class ProductManager{
 
 const producto = new ProductManager;
 
-// producto.addProduct("Mr. Gwyn - Alessandro Baricco", "Novela", 5000, "./img/portada.png", "LIB123", 1);
-// producto.addProduct("Mr. Vértigo - Paul Auster", "Novela", 6000, "./img/portada1.png", "LIB124", 10);
-// producto.addProduct("scott Pilgrim I - Bryan Lee O'Malley", "Comic", 2000, "./img/portada2.png", "LIB125", 15);
-// producto.addProduct("El eternauta - Héctor Germán Oesterheld", "Comic", 1500, "./img/portada3.png", "LIB126", 5);
-// producto.addProduct("Hinchadas - Pablo Alabarces", "Novela", 6500, "./img/portada4.png", "LIB126", 20);
+producto.addProduct("Mr. Gwyn - Alessandro Baricco", "Novela", 5000, "./img/portada.png", "LIB123", 1);
+producto.addProduct("Mr. Vértigo - Paul Auster", "Novela", 6000, "./img/portada1.png", "LIB124", 10);
+producto.addProduct("scott Pilgrim I - Bryan Lee O'Malley", "Comic", 2000, "./img/portada2.png", "LIB125", 15);
+producto.addProduct("El eternauta - Héctor Germán Oesterheld", "Comic", 1500, "./img/portada3.png", "LIB126", 5);
+producto.addProduct("Hinchadas - Pablo Alabarces", "Novela", 6500, "./img/portada4.png", "LIB126", 20);
 
+producto.getProducts();
+producto.getProductsById();
+producto.deleteProductsById();
 
-//producto.getProducts();
-
-//producto.getProductsById();
-
-//producto.deleteProductsById();
-
-// producto.updateProducts(
-//     {  
-//         title: 'Mr. Gwyn - Alessandro Baricco',
-//         description: 'Novela',
-//         price: 2500,
-//         thumbnail: './img/portada.png',        
-//         code: 'LIB123',
-//         stock: 1,
-//         id: 1
-//     }
-// )
+producto.updateProducts(
+    {  
+        title: 'Mr. Gwyn - Alessandro Baricco',
+        description: 'Novela',
+        price: 2500,
+        thumbnail: './img/portada.png',        
+        code: 'LIB123',
+        stock: 1,
+        id: 1
+    }
+)
